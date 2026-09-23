@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            h1 {
+                color: #eb0000;
+                background-color: #a5eaff;
+                text-align: center;
+                /* 가로 정렬 - 블럭 속성에만 가능 */
+            }
+            h2 {
+                font-size: 20px;
+                line-height: 1;
+                /* 행간  line-height: 30px, 100%, 1 가능*/
+                letter-spacing: -1px;
+                /* 자간 */
+                column-count: 2;
+                /* 단수 */
+                column-gap: 10px;
+                /* 단 간격 */
+                text-indent: 50px;
+                /* 들여쓰기 */
+            }
+            .trans1 {
+                text-transform: uppercase;
+            }
+            /* 대문자 변경 */
+            .trans2 {
+                text-transform: lowercase;
+            }
+            /* 소문자 변경 */
+            .trans3 {
+                text-transform: capitalize;
+            }
+            /* 앞에 단어만 대문자 변경 */
+            #warp {
+                width: 600px;
+                height: 300px;
+                background-color: #eb0000;
+                text-align: center;
+            }
+            .date {
+                background-color: aqua;
+                text-align: left;
+            }
+            .txt {
+                background-color: rgb(204, 255, 19);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>여자의 근로는 특별한 보호를 받으며</h1>
+        <a href="#">인라인</a>
+        <h2>
+            외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다
+            공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은
+            법률로써 하되 정당한 보상을 지급하여야 한다. 대한민국의 영토는
+            한반도와 그 부속도서로 한다.
+        </h2>
+        <p class="trans1">are you ok?</p>
+        <p class="trans2">ARE YOU OK?</p>
+        <p class="trans3">are you ok?</p>
+
+        <div id="warp">
+            <p class="date">2026년 9월 23일</p>
+            <p class="txt">
+                외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다
+                공공필요에 의한 재산권 수용·사용 또는 제한 및 그에 대한
+            </p>
+        </div>
+    </body>
+</html>

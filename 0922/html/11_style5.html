@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            section > h2 {
+                color: red;
+            }
+            section nav h2 {
+                color: blue;
+            }
+            article > div > p {
+                color: blueviolet;
+            }
+            /* a의 모든 후손 b
+              a b {...} a의 직계 자식 b
+              a>b */
+        </style>
+    </head>
+    <body>
+        <article>
+            <section>
+                <h2>apple</h2>
+                <nav>
+                    <h2>네비게이션</h2>
+                    <p>회원가입</p>
+                </nav>
+            </section>
+            <div>
+                <h2>배너</h2>
+                <p>상품상세설명</p>
+            </div>
+        </article>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>입력 방식</title>
+    </head>
+    <body>
+        <form>
+            아이디 : <input type="text" /> 비밀번호 : <input type="password" />
+        </form>
+
+        <form action="">
+            <input type="text" /> - 이름 <input type="text" /> - 학번
+        </form>
+
+        <form action="">
+            <label for="user">아이디</label>
+            <input type="text" id="user" />
+            <br />
+
+            <label for="pass">비밀번호</label>
+            <input type="password" id="pass" />
+        </form>
+
+        <form action="">
+            <fieldset>
+                <legend>정보입력</legend>
+                아이디 : <input type="text" /> <br />
+                비밀번호 : <input type="password" /> <br />
+                이메일 : <input type="email" /> <br />
+                url : <input type="url" /> <br />
+                전화번호 : <input type="tel" /> <br />
+                색상 : <input type="color" /> <br />
+                월 : <input type="month" /> <br />
+                날짜 : <input type="date" /> <br />
+                주 : <input type="week" /> <br />
+                시간 : <input type="time" /> <br />
+                지역시간 : <input type="datetime-local" /> <br />
+                숫자 : <input type="number" min="200" max="300" step="5" />
+                <br />
+                범위 : <input type="range" min="0" max="50" step="5" /> <br />
+                <input type="submit" value="보내기" />
+                <input type="reset" />
+                <input type="button" value="누르시용" />
+            </fieldset>
+        </form>
+        <button>버튼</button>
+        <button onclick="alert('앙뇽')">
+            <img src="../img/button.jpg" alt="" width="50" />
+        </button>
+
+        <form action="">
+            성별 : <br />
+            <label for="male">남성</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">여성</label
+            ><input type="radio" name="gender" id="female" />
+            <!-- label의 for와 inout id가 같아야 한다
+            radio속성은 중복선택 불가능 -->
+        </form>
+
+        <form action="">
+            <p>내가 좋아하는 과일은? (중복선택 가능)</p>
+            <input type="checkbox" name="fruits" value="apple" /> 사과 <br />
+            <input type="checkbox" name="fruits" value="orange" /> 오렌지 <br />
+            <input type="checkbox" name="fruits" value="strewberry" /> 딸기
+            <br />
+            <input type="checkbox" name="fruits" value="watermelon" /> 수박
+            <br />
+            <input type="checkbox" name="fruits" value="grape" /> 포도 <br />
+            <input type="checkbox" name="fruits" value="peach" /> 복숭아 <br />
+
+            <input
+                type="submit"
+                value="입력완료"
+                onclick="alert('제출 완료 ~~')"
+            />
+        </form>
+        <form action="">
+            <h3>게시판</h3>
+            <textarea cols="30" rows="10"></textarea>
+        </form>
+        <select>
+            <option value="car">자동차선택</option>
+            <option value="kia">KIA</option>
+            <option value="hyundai">HYUNDAI</option>
+            <option value="samsung">SAMSUNG</option>
+            <option value="bmw">BMW</option>
+            <option value="bentz">BENTZ</option>
+        </select>
+        <input type="file" accept="image/png, image/jpg" /> <br />
+        <input type="text" placeholder="검색해보세요" autofocus />
+        <input type="text" placeholder="반가워" readonly />
+    </body>
+</html>

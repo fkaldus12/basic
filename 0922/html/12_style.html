@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* 초기화 */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                color: yellow;
+                background-color: black;
+            }
+            a {
+                color: pink;
+                background-color: gray;
+            }
+            a:hover {
+                color: gray;
+                background-color: pink;
+            }
+            input[type="text"] {
+                background-color: orange;
+            }
+            input[type="password"] {
+                background-color: greenyellow;
+            }
+
+            /* 테이블 */
+            table {
+                border: 1px solid red;
+                border-collapse: collapse;
+            }
+            td {
+                border: 2px solid black;
+            }
+
+            table .red {
+                background-color: red;
+            }
+            table .blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Navigation</h1>
+        <ul>
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+            <li><a href="#">menu04</a></li>
+        </ul>
+
+        <form>
+            이름 : <input type="text" /> <br />
+            비밀번호 : <input type="password" /> <br />
+        </form>
+
+        <table>
+            <tr class="red">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+            <tr class="blue">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+            <tr class="red">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+            <tr class="blue">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+
+            <!-- table>tr*4>td*3>{테이블$$} -->
+        </table>
+    </body>
+</html>
